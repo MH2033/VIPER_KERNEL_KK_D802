@@ -104,3 +104,5 @@ scripts/kconfig/zconf.hash.c
 scripts/kconfig/zconf.lex.c
 scripts/kconfig/conf
 scripts/basic/fixdep
+scripts/kconfig/mconf
+
