@@ -98,3 +98,9 @@ arch/arm/boot/compressed/vmlinux
 # ignore initramfs
 initramfs
 /*.sh
+
+# kconfig generated files
+scripts/kconfig/zconf.hash.c
+scripts/kconfig/zconf.lex.c
+scripts/kconfig/conf
+scripts/basic/fixdep
