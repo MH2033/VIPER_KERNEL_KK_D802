@@ -375,6 +375,11 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks
+
+# Fix memaccess warning which cuases error on 64-bit systems with linaro >4.7
+
+KBUILD_CFLAGS	+= -Wno-sizeof-pointer-memaccess
+
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__
